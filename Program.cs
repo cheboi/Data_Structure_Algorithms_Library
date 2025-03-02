@@ -1,6 +1,7 @@
 ﻿using System;
 using Algorithms.Searching;
 using Algorithms.Sorting;
+using Algorithms.DynamicProgramming;
 
 class Program
 {
@@ -17,5 +18,9 @@ class Program
         Console.WriteLine("Before sorting: " + string.Join(", ", numbers));
         QuickSort.Sort(numbers);
         Console.WriteLine("After sorting: " + string.Join(", ", numbers));
+
+        // fibo
+        int fibNum = 10;
+        Console.WriteLine($"Fibonacci({fibNum}): {Fibonacci.Compute(fibNum)}");
     }
 }
