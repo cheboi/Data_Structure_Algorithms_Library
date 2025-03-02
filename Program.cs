@@ -1,5 +1,6 @@
 ﻿using System;
 using Algorithms.Searching;
+using Algorithms.Sorting;
 
 class Program
 {
@@ -10,5 +11,11 @@ class Program
         int target = 7;
         int index = BinarySearch.Search(arr, target);
         Console.WriteLine(index >= 0 ? $"Binary Search: Found at index {index}" : "Not found");
+
+        //Quick Sort
+        int[] numbers = [10, 7, 8, 9, 1, 5];
+        Console.WriteLine("Before sorting: " + string.Join(", ", numbers));
+        QuickSort.Sort(numbers);
+        Console.WriteLine("After sorting: " + string.Join(", ", numbers));
     }
 }
